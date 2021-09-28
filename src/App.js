@@ -147,6 +147,14 @@ export const App = () => {
 					Copy
 				</button>
 			</div>
+			<a
+				className='copyright'
+				href='https://vmog.net/'
+				target='_blank'
+				rel='noreferrer'
+			>
+				Copyright and design by © VMOG
+			</a>
 		</div>
 	);
 };

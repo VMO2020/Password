@@ -173,6 +173,9 @@ body {
 @media screen and (min-width: 980px) {
 	body {
 		.container {
+			margin-top: 5vh;
+			min-height: 90vh;
+
 			button,
 			label,
 			input {

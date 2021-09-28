@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './styles/styles.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	.container {
+		position: relative;
+		font-family: Arial, Helvetica, sans-serif;
+		@include font-size(17px, 30px);
+		width: 100vw;
+		max-width: $maxWidth;
+		min-height: 100vh;
+		margin: 0;
+		padding: 0;
+		color: $Light;
+		margin: auto;
+		overflow: hidden;
+		// border: 1px solid white;
+
+		img {
+			width: 100%;
+			vertical-align: top;
+		}
+
+		button {
+			width: 100%;
+			height: 3rem;
+			background: $mainColor;
+			color: $Light;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			vertical-align: top;
+			@include font-size(18px, 28px);
+			text-align: center;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: all 0.3s easy;
+
+			&:hover {
+				background: $mainColorhover;
+			}
+
+			span {
+				margin-left: 1em;
+			}
+		}
+
+		a {
+			color: $Light;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		label {
+			line-height: 3rem;
+		}
+
+		input {
+			width: 100%;
+			height: 3rem;
+			line-height: 3rem;
+			text-align: center;
+			@include font-size(20px, 30px);
+			border: none;
+			border-radius: 4px;
+			background: $Light;
+			color: $mainColor;
+			cursor: pointer;
+			transition: all 0.3s easy;
+
+			&:hover {
+				border: 1px solid $mainColor;
+			}
+
+			&::selection {
+				background: $MedLight;
+			}
+
+			&::-moz-selection {
+				background: $MedLight;
+			}
+		}
+
+		form {
+			width: 98%;
+			margin: auto;
+		}
+
+		.row {
+			margin: 1.8rem 0;
+			width: 100%;
+			height: 3rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+
+			& > * {
+				flex: 1;
+			}
+
+			span {
+				height: 3rem;
+				line-height: 3rem;
+				background: $Light;
+				color: $mainColor;
+			}
+		}
+
+		.copy {
+			width: 50%;
+			margin: auto;
+
+			span {
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	img {
+		margin-top: 3rem;
+	}
+}

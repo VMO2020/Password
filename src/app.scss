@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import './styles/styles.scss';
 
 * {
@@ -33,6 +33,22 @@ body {
 		margin: auto;
 		overflow: hidden;
 		border: 1px solid white;
+
+		.title {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			padding: 0.3rem 0;
+			text-align: center;
+			text-transform: uppercase;
+			color: $mainColor;
+			@include font-size(24px, 50px);
+			font-weight: bold;
+			background: rgba($color: #fff, $alpha: 0.3);
+			// background: $Dark;
+		}
 
 		img {
 			width: 100%;

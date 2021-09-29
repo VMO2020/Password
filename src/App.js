@@ -90,6 +90,7 @@ export const App = () => {
 
 	return (
 		<div className='container'>
+			<div className='title'>Password Generator</div>
 			<div>
 				<img src={Image} alt='logo' />
 			</div>

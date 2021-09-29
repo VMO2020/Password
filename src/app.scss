@@ -161,16 +161,13 @@ body {
 		}
 		a.copyright {
 			@include font-size(14px, 24px);
-			position: absolute;
-			left: 50%;
-			bottom: 1em;
-			transform: translateX(-50%);
+			display: block;
+			width: 100%;
+			padding-top: 1.5em;
+			text-align: center;
 			color: $Light;
 			text-decoration: none;
 			cursor: pointer;
-			width: 100%;
-			text-align: center;
-			z-index: 90;
 		}
 	}
 }
